@@ -54,9 +54,9 @@ def iss_checker():
         now = dt.datetime.now().hour
 
         if now >= sunset_hour or now <= sunrise_hour:
-            sender = yagmail.SMTP(user='automatedbygerman@gmail.com',
-                                  password='lvfgdsipnqizsesd')
-            sender.send(to='menisci-01-subsets@icloud.com',
+            sender = yagmail.SMTP(user='MAIL',
+                                  password='PASSWORD')
+            sender.send(to='MAIL',
                         subject="The ISS is over your head",
                         contents="You have to look up right now!")
             print("Look up")
